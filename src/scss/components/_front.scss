@@ -1,0 +1,72 @@
+.front{
+    background: url("../../images/home.png");
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 3rem;
+    
+    &__navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0 12rem;
+        &__logo{
+           background-image: url("../../images/logo.png");
+           background-position: center;
+           background-size: contain;
+           background-repeat: no-repeat;
+           width: 150px;
+           height: 100px;
+        }
+        &__menu{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            li{
+                display: inline-block;
+                padding: 0rem 2rem;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+   
+    &__desc{
+        margin: 9rem 12rem;
+        h1{
+            color: white;
+            font-size: 3rem;
+            margin: 0 0.5rem 0 0;
+            font-family: 'Libre Baskerville', serif;
+        }
+        p{
+            color: rgb(199, 195, 195);
+            font-size: 1rem;
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+
+    &__label{
+        margin: 0 12rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+        font-family: 'Nunito', sans-serif;
+        &__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            margin: 0;
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            border-radius: 50%;
+        }
+    }
+}

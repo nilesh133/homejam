@@ -1,0 +1,70 @@
+.review__heading{
+    display: flex;
+    justify-content: space-between; 
+    margin: 5rem 10rem 1rem 10rem;
+    &__left{ 
+        position: relative;
+        color: white;
+        font-size: 2rem;
+        font-family: 'Libre Baskerville', serif;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 35%;
+            height: 3px;
+            background-color: blue;
+            top: 100%;
+            left: 0;
+        }
+    }
+    &__right{
+        color: gray;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+}
+
+.review{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
+    padding-bottom: 5rem;
+    font-family: 'Nunito', sans-serif;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 23%;
+        color: white;
+        border-radius: 2rem;
+        background-color: #0A0B1A;
+        border: 5px solid goldenrod;
+        padding: 2rem 3rem;
+        &__info{
+            display: flex;
+            &__avator{
+                background-image: url("../../images/review.png");
+                width: 80px;
+                height: 80px;
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+            }
+            &__detail{
+                margin-left: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h3{
+                    margin: 0;
+                    font-family: 'Quattrocento', serif;
+                }
+                p{
+                    margin: 0;
+                    color: gold;
+                }
+            }
+        }
+    }
+}
